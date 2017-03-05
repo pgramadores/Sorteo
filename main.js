@@ -32,9 +32,10 @@ for (i = participantes.length; i; i--) {
 function log(participantes){
     var retirado = participantes.pop();
     if (participantes.length != 0) {
+
         console.log(`
         ======================================
-        | Al agua ${retirado.nombre}
+        | Al agua ${retirado.nombre}, quedan ${participantes.length}
         ======================================
         `);
         setTimeout(function () {
@@ -43,7 +44,7 @@ function log(participantes){
     }else{
         console.log(`
         *******************************************************
-        * ¡El flamante ganador es: ${retirado.nombre.toUpperCase()} felicidades!
+        * ¡El/la flamante ganador/a es: ${retirado.nombre.toUpperCase()} felicidades!
         *******************************************************
         `);
     }
