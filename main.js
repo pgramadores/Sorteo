@@ -1,22 +1,25 @@
   var participantes = [
-  {
-    nombre: "Juan"
-  },
-  {
-    nombre: "Agustin"
-  },
-  {
-    nombre: "Bernardo"
-  },
-  {
-    nombre: "Claudia"
-  },
-  {
-    nombre: "Giannina"
-  },
-  {
-    nombre: "Andres"
-  }
+    {
+        nombre: "Juan"
+    },
+    {
+        nombre: "Agustin"
+    },
+    {
+        nombre: "Bernardo"
+    },
+    {
+        nombre: "Claudia"
+    },
+    {
+        nombre: "Giannina"
+    },
+    {
+        nombre: "Andres"
+    },
+    {
+        nombre: "Diego"
+    }
 ]
 
 for (i = participantes.length; i; i--) {
@@ -29,10 +32,20 @@ for (i = participantes.length; i; i--) {
 function log(participantes){
     var retirado = participantes.pop();
     if (participantes.length != 0) {
-      console.log('Al agua ' + retirado.nombre);
-      setTimeout(function () {log(participantes);}, 3000);
+        console.log(`
+        ======================================
+        | Al agua ${retirado.nombre}
+        ======================================
+        `);
+        setTimeout(function () {
+            log(participantes);
+        }, 1000);
     }else{
-      console.log('¡El ganador es: ' + retirado.nombre + ' felicidades!');
+        console.log(`
+        *******************************************************
+        * ¡El flamante ganador es: ${retirado.nombre.toUpperCase()} felicidades!
+        *******************************************************
+        `);
     }
 }
 
