@@ -1,4 +1,19 @@
 var participantes = [
+  {
+    nombre: 'Valeska'
+  },
+  {
+    nombre: 'Monica'
+  },
+  {
+    nombre: 'Jocelyn'
+  },
+  {
+    nombre: 'Maria Jose'
+  },
+  {
+    nombre: 'Andres'
+  }
 ]
 
 for (i = participantes.length; i; i--) {
